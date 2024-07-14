@@ -16,6 +16,6 @@ We are using Dataset 4, which records comprehensive meteorological parameters ov
 
 ## Target Variable
 
-- **Temperature**: Ambient air temperature (in degrees Celsius) recorded at each time point, serving as the primary focus for analysis and prediction. Temperature fluctuations over time reveal seasonal patterns, diurnal variations, and the influence of various weather phenomena.
+- **Temperature**: Ambient air temperature (in degrees Celsius) recorded at each time point, serving as the primary focus for analysis and prediction. Temperature fluctuations over time reveal seasonal patterns, diurnal variations, and the influence of various weather phenomena. The temperature is classified according to the ideal range for wheat growth, which is between 12 and 25 degrees Celsius.
 
 This dataset provides a detailed temporal record of key meteorological parameters, suitable for various analyses including time-series forecasting, trend analysis, and environmental monitoring.
