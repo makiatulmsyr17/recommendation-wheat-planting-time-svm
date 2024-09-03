@@ -2,12 +2,12 @@ import pickle
 import streamlit as st
 import pandas as pd
 
-# Load model dari file model.pkl
+# Load model dari file model_svm.pkl
 with open('D:\\1.Data Science\\project\\recommendation-wheat-planting-time-svm\\recommendation-wheat-planting-time-svm\\models\\model_svm.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Aplikasi Streamlit
-st.title('Model Prediction App')
+st.title('Rekomendasi Bagus Atau Tidaknya Cuaca untuk Menanam Gandum')
 
 # Input dari pengguna sesuai urutan yang benar
 Iws = st.number_input('Masukkan nilai untuk Iws:')
@@ -39,4 +39,10 @@ if st.button('Predict'):
     # Prediksi menggunakan model yang sudah diload
     prediction = model.predict(input_data)
     
-    st.write('Prediction:', prediction[0])
+    # Tampilkan hasil prediksi
+    if prediction[0] == 1.0:
+        st.write('Hasil Prediksi: Cuaca saat ini **bagus** untuk menanam gandum.')
+    elif prediction[0] == 0.0:
+        st.write('Hasil Prediksi: Cuaca saat ini **tidak cocok** untuk menanam gandum.')
+    else:
+        st.write('Hasil Prediksi: Nilai prediksi tidak valid.')
