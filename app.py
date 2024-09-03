@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 
 # Load model dari file model_svm.pkl
-with open('D:\\1.Data Science\\project\\recommendation-wheat-planting-time-svm\\recommendation-wheat-planting-time-svm\\models\\model_svm.pkl', 'rb') as file:
+with open('./models\model_svm.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Aplikasi Streamlit
