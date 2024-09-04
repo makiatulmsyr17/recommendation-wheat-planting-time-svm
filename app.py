@@ -7,7 +7,7 @@ with open('./models/model_svm.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Aplikasi Streamlit
-st.title('Gandum Grow: Cuaca Ideal untuk Penanaman')
+st.title('Grow Gandum: Predicting Optimal Climate for Wheat Cultivation')
 
 # CSS untuk membuat desain hitam putih dan tombol hitam
 st.markdown(

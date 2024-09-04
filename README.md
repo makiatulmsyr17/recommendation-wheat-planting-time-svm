@@ -2,9 +2,9 @@
 
 This project leverages machine learning to predict whether the weather and climate conditions are ideal for growing wheat, assisting farmers in making informed decisions and reducing the risk of crop failure.
 
-## **Table of Contents**
+## ** File Notebooks **
 
-- **[Notebook](notebooks/notebook.ipynb)**: Explore data and develop predictive models.
+- **[Notebook](notebooks/)**: Explore data and develop predictive models.
 
 ## **Limitations**
 
